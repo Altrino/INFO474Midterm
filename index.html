@@ -1,1 +1,36 @@
-My Page
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pokemon</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/d3-simple-slider"></script>
+  </head>
+  <body>
+    <h1>Pokemon: Special Defense vs Total Stats</h1>
+    <div style="display: flex">
+      <div style="width: 300px">
+        <h3>Legendary</h3>
+        <form id="isLegendary">
+          <input  type='radio' id="all" name="legendary" checked>(All)</input>
+          <input type='radio' id="true" name="legendary">True</input>
+          <input type='radio' id="false" name="legendary">False</input>
+        </form>
+      </div>
+      <div style="width: 200px">
+        <h3>Generation (group)</h3>
+        <select id='gen'>
+            <option value=''>(All)</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+        </select> 
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
